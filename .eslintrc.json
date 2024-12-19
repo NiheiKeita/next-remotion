@@ -22,7 +22,14 @@
   },
   "plugins": [
     "react",
-    "tailwindcss"
+    "tailwindcss",
+    "@remotion"
+  ],
+  "overrides": [
+    {
+      "files": ["remotion/*.{ts,tsx}"],
+      "extends": ["plugin:@remotion/recommended"]
+    }
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
